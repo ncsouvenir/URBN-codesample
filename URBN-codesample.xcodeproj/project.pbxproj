@@ -13,6 +13,7 @@
 		812B88CA207FFF3800ADFDF5 /* AppErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812B88C9207FFF3800ADFDF5 /* AppErrors.swift */; };
 		812B88CE2080004C00ADFDF5 /* VenueSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812B88CD2080004C00ADFDF5 /* VenueSearchModel.swift */; };
 		812B88D02080029000ADFDF5 /* VenueDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812B88CF2080029000ADFDF5 /* VenueDetailsModel.swift */; };
+		812B88D32080389900ADFDF5 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812B88D22080389900ADFDF5 /* UserDefaults.swift */; };
 		81A872C0207FC7450007C9B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A872BF207FC7450007C9B5 /* AppDelegate.swift */; };
 		81A872C5207FC7450007C9B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81A872C3207FC7450007C9B5 /* Main.storyboard */; };
 		81A872C7207FC7460007C9B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81A872C6207FC7460007C9B5 /* Assets.xcassets */; };
@@ -54,6 +55,7 @@
 		812B88C9207FFF3800ADFDF5 /* AppErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppErrors.swift; sourceTree = "<group>"; };
 		812B88CD2080004C00ADFDF5 /* VenueSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueSearchModel.swift; sourceTree = "<group>"; };
 		812B88CF2080029000ADFDF5 /* VenueDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueDetailsModel.swift; sourceTree = "<group>"; };
+		812B88D22080389900ADFDF5 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		81A872BC207FC7450007C9B5 /* URBN-codesample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "URBN-codesample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81A872BF207FC7450007C9B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81A872C4207FC7450007C9B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -102,6 +104,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		812B88D12080388500ADFDF5 /* DataPersistance */ = {
+			isa = PBXGroup;
+			children = (
+				812B88D22080389900ADFDF5 /* UserDefaults.swift */,
+			);
+			path = DataPersistance;
+			sourceTree = "<group>";
+		};
+		812B88D4208039BF00ADFDF5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		812B88D5208039E400ADFDF5 /* SearchExtensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SearchExtensions;
+			sourceTree = "<group>";
+		};
 		81A872B3207FC7450007C9B5 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +149,7 @@
 		81A872BE207FC7450007C9B5 /* URBN-codesample */ = {
 			isa = PBXGroup;
 			children = (
+				812B88D12080388500ADFDF5 /* DataPersistance */,
 				81A872F1207FC9E00007C9B5 /* Models */,
 				81A872F0207FC9D40007C9B5 /* Services */,
 				81A872EF207FC9BE0007C9B5 /* ViewControllers */,
@@ -167,6 +192,7 @@
 		81A872EE207FC9B50007C9B5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				812B88D4208039BF00ADFDF5 /* Cells */,
 				81A87304207FCBB40007C9B5 /* SearchView.swift */,
 				81A87306207FCBC50007C9B5 /* ResultsListView.swift */,
 				81A87308207FCBD70007C9B5 /* DetailedVenueView.swift */,
@@ -178,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				81A872FE207FCA650007C9B5 /* SearchVC.swift */,
+				812B88D5208039E400ADFDF5 /* SearchExtensions */,
 				81A87300207FCA8B0007C9B5 /* ResultsListVC.swift */,
 				81A87302207FCB9C0007C9B5 /* DetailedVenueVC.swift */,
 			);
@@ -342,6 +369,7 @@
 				81A872F7207FCA1F0007C9B5 /* NetworkHelper.swift in Sources */,
 				812B88C4207FFA7E00ADFDF5 /* FourSquareAPIKeys.swift in Sources */,
 				81A872C0207FC7450007C9B5 /* AppDelegate.swift in Sources */,
+				812B88D32080389900ADFDF5 /* UserDefaults.swift in Sources */,
 				812B88C6207FFE7900ADFDF5 /* VenuePhotoModel.swift in Sources */,
 				812B88CA207FFF3800ADFDF5 /* AppErrors.swift in Sources */,
 				81A872F5207FCA0E0007C9B5 /* LocationService.swift in Sources */,

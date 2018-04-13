@@ -57,10 +57,8 @@ extension LocationService {
                 status = .restricted
                 locationManager.stopUpdatingLocation()
             }
-            
             return (status, true)
         }
-        
     }
     
     public func getLatAndLong(fromLocation location: String, completionHandler: @escaping (Error?, (latitude: Double, longitude: Double)?) -> Void) {
@@ -84,7 +82,7 @@ extension LocationService {
         }
     }
     
-    //to avoid having to import core location in the view controller
+    //MARK: created funciton to avoid having to import core location in the view controller
     public func locationServicesEnabled() -> Bool {
         return CLLocationManager.locationServicesEnabled()
     }
