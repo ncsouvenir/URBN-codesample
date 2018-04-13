@@ -14,7 +14,7 @@ class NetworkHelper {
 
     let urlSession = URLSession(configuration: .default)
     
-    func performDataTask(with urlRequest: URL,
+    func performDataTask(with urlRequest: URLRequest,
                          completionHandler: @escaping ((Data) -> Void),
                          errorHandler: @escaping (Error) -> Void) {
         

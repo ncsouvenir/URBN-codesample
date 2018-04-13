@@ -12,7 +12,7 @@ enum AppError: Error {
     case invalidJSONResponse
     case couldNotParseJSON(rawError: Error)
     case noInternetConnection
-    case badURL
+    case badURL(url:String)
     case badStatusCode
     case noDataReceived
     case notAnImage
