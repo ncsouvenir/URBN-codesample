@@ -7,28 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06A518C9079C96464717D03A /* Pods_URBN_codesampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C18B9D85E43F5E3D8A107F /* Pods_URBN_codesampleUITests.framework */; };
+		3CD6BD033C21AC0FEBBE0D7A /* Pods_URBN_codesample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7A14881ED788895CB5CFEA7 /* Pods_URBN_codesample.framework */; };
 		812B88C4207FFA7E00ADFDF5 /* FourSquareAPIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812B88C3207FFA7E00ADFDF5 /* FourSquareAPIKeys.swift */; };
 		812B88C6207FFE7900ADFDF5 /* VenuePhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812B88C5207FFE7900ADFDF5 /* VenuePhotoModel.swift */; };
 		812B88C8207FFE9F00ADFDF5 /* PhotoAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812B88C7207FFE9F00ADFDF5 /* PhotoAPIService.swift */; };
 		812B88CA207FFF3800ADFDF5 /* AppErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812B88C9207FFF3800ADFDF5 /* AppErrors.swift */; };
 		812B88CE2080004C00ADFDF5 /* VenueSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812B88CD2080004C00ADFDF5 /* VenueSearchModel.swift */; };
-		812B88D02080029000ADFDF5 /* VenueDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812B88CF2080029000ADFDF5 /* VenueDetailsModel.swift */; };
 		812B88D32080389900ADFDF5 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812B88D22080389900ADFDF5 /* UserDefaults.swift */; };
+		812B88D720803C8F00ADFDF5 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812B88D620803C8F00ADFDF5 /* EmptyView.swift */; };
+		812B88D920803CDF00ADFDF5 /* ResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812B88D820803CDF00ADFDF5 /* ResultsTableViewCell.swift */; };
+		812B88E32080E08800ADFDF5 /* MKMapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812B88E22080E08800ADFDF5 /* MKMapViewDelegate.swift */; };
+		812B88E52080E8CE00ADFDF5 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812B88E42080E8CE00ADFDF5 /* Alerts.swift */; };
+		812B88E72080F81100ADFDF5 /* SearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812B88E62080F81100ADFDF5 /* SearchBarDelegate.swift */; };
+		812B88E92080F83A00ADFDF5 /* LocationServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812B88E82080F83A00ADFDF5 /* LocationServiceDelegate.swift */; };
+		812B88EB2081230500ADFDF5 /* DetailedVenueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812B88EA2081230500ADFDF5 /* DetailedVenueTableViewCell.swift */; };
 		81A872C0207FC7450007C9B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A872BF207FC7450007C9B5 /* AppDelegate.swift */; };
-		81A872C5207FC7450007C9B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81A872C3207FC7450007C9B5 /* Main.storyboard */; };
 		81A872C7207FC7460007C9B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81A872C6207FC7460007C9B5 /* Assets.xcassets */; };
 		81A872CA207FC7460007C9B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81A872C8207FC7460007C9B5 /* LaunchScreen.storyboard */; };
 		81A872D5207FC7470007C9B5 /* URBN_codesampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A872D4207FC7470007C9B5 /* URBN_codesampleTests.swift */; };
 		81A872E0207FC7470007C9B5 /* URBN_codesampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A872DF207FC7470007C9B5 /* URBN_codesampleUITests.swift */; };
 		81A872F3207FC9F80007C9B5 /* FoursquareAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A872F2207FC9F80007C9B5 /* FoursquareAPIService.swift */; };
 		81A872F5207FCA0E0007C9B5 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A872F4207FCA0E0007C9B5 /* LocationService.swift */; };
-		81A872F7207FCA1F0007C9B5 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A872F6207FCA1F0007C9B5 /* NetworkHelper.swift */; };
 		81A872FF207FCA650007C9B5 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A872FE207FCA650007C9B5 /* SearchVC.swift */; };
 		81A87301207FCA8B0007C9B5 /* ResultsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A87300207FCA8B0007C9B5 /* ResultsListVC.swift */; };
 		81A87303207FCB9C0007C9B5 /* DetailedVenueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A87302207FCB9C0007C9B5 /* DetailedVenueVC.swift */; };
 		81A87305207FCBB40007C9B5 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A87304207FCBB40007C9B5 /* SearchView.swift */; };
 		81A87307207FCBC50007C9B5 /* ResultsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A87306207FCBC50007C9B5 /* ResultsListView.swift */; };
 		81A87309207FCBD70007C9B5 /* DetailedVenueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A87308207FCBD70007C9B5 /* DetailedVenueView.swift */; };
+		E1CA2C9EDEC9BA9E24EF76A2 /* Pods_URBN_codesampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B86F80FF5F692E189BCB53 /* Pods_URBN_codesampleTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,16 +56,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		115D202120C7DF52A49F7409 /* Pods-URBN-codesampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URBN-codesampleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-URBN-codesampleUITests/Pods-URBN-codesampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		250DAC2965A88EFD6D0B5331 /* Pods-URBN-codesampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URBN-codesampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-URBN-codesampleTests/Pods-URBN-codesampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		256F1C6480E1313B70950A93 /* Pods-URBN-codesampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URBN-codesampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-URBN-codesampleUITests/Pods-URBN-codesampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		812B88C3207FFA7E00ADFDF5 /* FourSquareAPIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourSquareAPIKeys.swift; sourceTree = "<group>"; };
 		812B88C5207FFE7900ADFDF5 /* VenuePhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuePhotoModel.swift; sourceTree = "<group>"; };
 		812B88C7207FFE9F00ADFDF5 /* PhotoAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAPIService.swift; sourceTree = "<group>"; };
 		812B88C9207FFF3800ADFDF5 /* AppErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppErrors.swift; sourceTree = "<group>"; };
 		812B88CD2080004C00ADFDF5 /* VenueSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueSearchModel.swift; sourceTree = "<group>"; };
-		812B88CF2080029000ADFDF5 /* VenueDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueDetailsModel.swift; sourceTree = "<group>"; };
 		812B88D22080389900ADFDF5 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		812B88D620803C8F00ADFDF5 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		812B88D820803CDF00ADFDF5 /* ResultsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableViewCell.swift; sourceTree = "<group>"; };
+		812B88E22080E08800ADFDF5 /* MKMapViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMapViewDelegate.swift; sourceTree = "<group>"; };
+		812B88E42080E8CE00ADFDF5 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		812B88E62080F81100ADFDF5 /* SearchBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarDelegate.swift; sourceTree = "<group>"; };
+		812B88E82080F83A00ADFDF5 /* LocationServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServiceDelegate.swift; sourceTree = "<group>"; };
+		812B88EA2081230500ADFDF5 /* DetailedVenueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedVenueTableViewCell.swift; sourceTree = "<group>"; };
 		81A872BC207FC7450007C9B5 /* URBN-codesample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "URBN-codesample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81A872BF207FC7450007C9B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		81A872C4207FC7450007C9B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		81A872C6207FC7460007C9B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81A872C9207FC7460007C9B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81A872CB207FC7460007C9B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,13 +85,18 @@
 		81A872E1207FC7470007C9B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81A872F2207FC9F80007C9B5 /* FoursquareAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareAPIService.swift; sourceTree = "<group>"; };
 		81A872F4207FCA0E0007C9B5 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
-		81A872F6207FCA1F0007C9B5 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		81A872FE207FCA650007C9B5 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		81A87300207FCA8B0007C9B5 /* ResultsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsListVC.swift; sourceTree = "<group>"; };
 		81A87302207FCB9C0007C9B5 /* DetailedVenueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedVenueVC.swift; sourceTree = "<group>"; };
 		81A87304207FCBB40007C9B5 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		81A87306207FCBC50007C9B5 /* ResultsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsListView.swift; sourceTree = "<group>"; };
 		81A87308207FCBD70007C9B5 /* DetailedVenueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedVenueView.swift; sourceTree = "<group>"; };
+		88C18B9D85E43F5E3D8A107F /* Pods_URBN_codesampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_URBN_codesampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C144455161760453273FAC45 /* Pods-URBN-codesample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URBN-codesample.release.xcconfig"; path = "Pods/Target Support Files/Pods-URBN-codesample/Pods-URBN-codesample.release.xcconfig"; sourceTree = "<group>"; };
+		D17154C936D5F6E396725B9C /* Pods-URBN-codesample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URBN-codesample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-URBN-codesample/Pods-URBN-codesample.debug.xcconfig"; sourceTree = "<group>"; };
+		D3B86F80FF5F692E189BCB53 /* Pods_URBN_codesampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_URBN_codesampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7A14881ED788895CB5CFEA7 /* Pods_URBN_codesample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_URBN_codesample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9EA3C3C003B74A55B5B054D /* Pods-URBN-codesampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URBN-codesampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-URBN-codesampleTests/Pods-URBN-codesampleTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CD6BD033C21AC0FEBBE0D7A /* Pods_URBN_codesample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1CA2C9EDEC9BA9E24EF76A2 /* Pods_URBN_codesampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06A518C9079C96464717D03A /* Pods_URBN_codesampleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +138,8 @@
 		812B88D4208039BF00ADFDF5 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				812B88D820803CDF00ADFDF5 /* ResultsTableViewCell.swift */,
+				812B88EA2081230500ADFDF5 /* DetailedVenueTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -122,6 +147,9 @@
 		812B88D5208039E400ADFDF5 /* SearchExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				812B88E62080F81100ADFDF5 /* SearchBarDelegate.swift */,
+				812B88E82080F83A00ADFDF5 /* LocationServiceDelegate.swift */,
+				812B88E22080E08800ADFDF5 /* MKMapViewDelegate.swift */,
 			);
 			path = SearchExtensions;
 			sourceTree = "<group>";
@@ -133,6 +161,8 @@
 				81A872D3207FC7470007C9B5 /* URBN-codesampleTests */,
 				81A872DE207FC7470007C9B5 /* URBN-codesampleUITests */,
 				81A872BD207FC7450007C9B5 /* Products */,
+				D4027D762AD571334F2566AA /* Pods */,
+				9BBC120AB7D94F45505ED323 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,8 +184,6 @@
 				81A872F0207FC9D40007C9B5 /* Services */,
 				81A872EF207FC9BE0007C9B5 /* ViewControllers */,
 				81A872EE207FC9B50007C9B5 /* Views */,
-				81A872BF207FC7450007C9B5 /* AppDelegate.swift */,
-				81A872C3207FC7450007C9B5 /* Main.storyboard */,
 				81A872ED207FC7670007C9B5 /* SupportingFiles */,
 				81A872CB207FC7460007C9B5 /* Info.plist */,
 			);
@@ -183,6 +211,7 @@
 		81A872ED207FC7670007C9B5 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				81A872BF207FC7450007C9B5 /* AppDelegate.swift */,
 				81A872C6207FC7460007C9B5 /* Assets.xcassets */,
 				81A872C8207FC7460007C9B5 /* LaunchScreen.storyboard */,
 			);
@@ -192,10 +221,11 @@
 		81A872EE207FC9B50007C9B5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				812B88D4208039BF00ADFDF5 /* Cells */,
 				81A87304207FCBB40007C9B5 /* SearchView.swift */,
 				81A87306207FCBC50007C9B5 /* ResultsListView.swift */,
 				81A87308207FCBD70007C9B5 /* DetailedVenueView.swift */,
+				812B88D620803C8F00ADFDF5 /* EmptyView.swift */,
+				812B88D4208039BF00ADFDF5 /* Cells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -214,12 +244,12 @@
 		81A872F0207FC9D40007C9B5 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				81A872F6207FCA1F0007C9B5 /* NetworkHelper.swift */,
 				81A872F2207FC9F80007C9B5 /* FoursquareAPIService.swift */,
 				812B88C7207FFE9F00ADFDF5 /* PhotoAPIService.swift */,
 				81A872F4207FCA0E0007C9B5 /* LocationService.swift */,
 				812B88C3207FFA7E00ADFDF5 /* FourSquareAPIKeys.swift */,
 				812B88C9207FFF3800ADFDF5 /* AppErrors.swift */,
+				812B88E42080E8CE00ADFDF5 /* Alerts.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -228,10 +258,32 @@
 			isa = PBXGroup;
 			children = (
 				812B88CD2080004C00ADFDF5 /* VenueSearchModel.swift */,
-				812B88CF2080029000ADFDF5 /* VenueDetailsModel.swift */,
 				812B88C5207FFE7900ADFDF5 /* VenuePhotoModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		9BBC120AB7D94F45505ED323 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7A14881ED788895CB5CFEA7 /* Pods_URBN_codesample.framework */,
+				D3B86F80FF5F692E189BCB53 /* Pods_URBN_codesampleTests.framework */,
+				88C18B9D85E43F5E3D8A107F /* Pods_URBN_codesampleUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4027D762AD571334F2566AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D17154C936D5F6E396725B9C /* Pods-URBN-codesample.debug.xcconfig */,
+				C144455161760453273FAC45 /* Pods-URBN-codesample.release.xcconfig */,
+				250DAC2965A88EFD6D0B5331 /* Pods-URBN-codesampleTests.debug.xcconfig */,
+				F9EA3C3C003B74A55B5B054D /* Pods-URBN-codesampleTests.release.xcconfig */,
+				115D202120C7DF52A49F7409 /* Pods-URBN-codesampleUITests.debug.xcconfig */,
+				256F1C6480E1313B70950A93 /* Pods-URBN-codesampleUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,9 +293,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81A872E4207FC7470007C9B5 /* Build configuration list for PBXNativeTarget "URBN-codesample" */;
 			buildPhases = (
+				D97863C3DAABBB46EDF9CECB /* [CP] Check Pods Manifest.lock */,
 				81A872B8207FC7450007C9B5 /* Sources */,
 				81A872B9207FC7450007C9B5 /* Frameworks */,
 				81A872BA207FC7450007C9B5 /* Resources */,
+				2F6F0A6500F9E38E48C9379B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,6 +312,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81A872E7207FC7470007C9B5 /* Build configuration list for PBXNativeTarget "URBN-codesampleTests" */;
 			buildPhases = (
+				8838E88A52ED022A5B228550 /* [CP] Check Pods Manifest.lock */,
 				81A872CC207FC7470007C9B5 /* Sources */,
 				81A872CD207FC7470007C9B5 /* Frameworks */,
 				81A872CE207FC7470007C9B5 /* Resources */,
@@ -276,6 +331,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81A872EA207FC7470007C9B5 /* Build configuration list for PBXNativeTarget "URBN-codesampleUITests" */;
 			buildPhases = (
+				22D99BD96157D87B1A6317BE /* [CP] Check Pods Manifest.lock */,
 				81A872D7207FC7470007C9B5 /* Sources */,
 				81A872D8207FC7470007C9B5 /* Frameworks */,
 				81A872D9207FC7470007C9B5 /* Resources */,
@@ -339,7 +395,6 @@
 			files = (
 				81A872CA207FC7460007C9B5 /* LaunchScreen.storyboard in Resources */,
 				81A872C7207FC7460007C9B5 /* Assets.xcassets in Resources */,
-				81A872C5207FC7450007C9B5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,25 +414,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		22D99BD96157D87B1A6317BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-URBN-codesampleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F6F0A6500F9E38E48C9379B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-URBN-codesample/Pods-URBN-codesample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-URBN-codesample/Pods-URBN-codesample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8838E88A52ED022A5B228550 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-URBN-codesampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D97863C3DAABBB46EDF9CECB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-URBN-codesample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		81A872B8207FC7450007C9B5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				812B88E92080F83A00ADFDF5 /* LocationServiceDelegate.swift in Sources */,
 				81A87307207FCBC50007C9B5 /* ResultsListView.swift in Sources */,
+				812B88EB2081230500ADFDF5 /* DetailedVenueTableViewCell.swift in Sources */,
+				812B88E52080E8CE00ADFDF5 /* Alerts.swift in Sources */,
 				81A87305207FCBB40007C9B5 /* SearchView.swift in Sources */,
-				81A872F7207FCA1F0007C9B5 /* NetworkHelper.swift in Sources */,
 				812B88C4207FFA7E00ADFDF5 /* FourSquareAPIKeys.swift in Sources */,
 				81A872C0207FC7450007C9B5 /* AppDelegate.swift in Sources */,
 				812B88D32080389900ADFDF5 /* UserDefaults.swift in Sources */,
+				812B88D920803CDF00ADFDF5 /* ResultsTableViewCell.swift in Sources */,
+				812B88E72080F81100ADFDF5 /* SearchBarDelegate.swift in Sources */,
 				812B88C6207FFE7900ADFDF5 /* VenuePhotoModel.swift in Sources */,
 				812B88CA207FFF3800ADFDF5 /* AppErrors.swift in Sources */,
 				81A872F5207FCA0E0007C9B5 /* LocationService.swift in Sources */,
 				812B88C8207FFE9F00ADFDF5 /* PhotoAPIService.swift in Sources */,
+				812B88E32080E08800ADFDF5 /* MKMapViewDelegate.swift in Sources */,
+				812B88D720803C8F00ADFDF5 /* EmptyView.swift in Sources */,
 				81A87301207FCA8B0007C9B5 /* ResultsListVC.swift in Sources */,
 				812B88CE2080004C00ADFDF5 /* VenueSearchModel.swift in Sources */,
 				81A87309207FCBD70007C9B5 /* DetailedVenueView.swift in Sources */,
-				812B88D02080029000ADFDF5 /* VenueDetailsModel.swift in Sources */,
 				81A872F3207FC9F80007C9B5 /* FoursquareAPIService.swift in Sources */,
 				81A87303207FCB9C0007C9B5 /* DetailedVenueVC.swift in Sources */,
 				81A872FF207FCA650007C9B5 /* SearchVC.swift in Sources */,
@@ -416,14 +555,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		81A872C3207FC7450007C9B5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				81A872C4207FC7450007C9B5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		81A872C8207FC7460007C9B5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -551,6 +682,7 @@
 		};
 		81A872E5207FC7470007C9B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D17154C936D5F6E396725B9C /* Pods-URBN-codesample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -568,6 +700,7 @@
 		};
 		81A872E6207FC7470007C9B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C144455161760453273FAC45 /* Pods-URBN-codesample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -585,6 +718,7 @@
 		};
 		81A872E8207FC7470007C9B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 250DAC2965A88EFD6D0B5331 /* Pods-URBN-codesampleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -605,6 +739,7 @@
 		};
 		81A872E9207FC7470007C9B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9EA3C3C003B74A55B5B054D /* Pods-URBN-codesampleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -625,6 +760,7 @@
 		};
 		81A872EB207FC7470007C9B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 115D202120C7DF52A49F7409 /* Pods-URBN-codesampleUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -644,6 +780,7 @@
 		};
 		81A872EC207FC7470007C9B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 256F1C6480E1313B70950A93 /* Pods-URBN-codesampleUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

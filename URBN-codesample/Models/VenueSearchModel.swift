@@ -7,8 +7,6 @@
 
 import Foundation
 
-//formula: prefix+width+"x"+height+suffix
-
 struct AllVenues: Codable {
     let responseVenue: ResponseVenue
     
@@ -27,7 +25,6 @@ struct Venue: Codable {
     let contact: Contact
     let location: Location
     let categories: [Category]
-    let menu: Menu
 }
 
 struct Contact: Codable {
@@ -36,6 +33,7 @@ struct Contact: Codable {
 
 struct Location: Codable {
     let address: String?
+    let formattedAddress: [String]?
     let crossStreet: String?
     let lat: Double
     let lng: Double
@@ -51,12 +49,6 @@ struct Category: Codable {
     let pluralName: String
     let shortName: String
 }
-
-
-struct Menu: Codable {
-    let mobileURL: String?
-}
-
 
 
 

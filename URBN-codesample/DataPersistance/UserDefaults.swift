@@ -22,12 +22,10 @@ class UserPreferences {
     public func saveUserCoordinates(latitude: Double, longitude: Double) {
         userDefaults.set(latitude, forKey: userCoordinatesLatitudeKey)
         userDefaults.set(longitude, forKey: userCoordinatesLongitudeKey)
-        print("saved user coordinates!")
     }
     public func saveSearchCoordinates(latitude: Double, longitude: Double) {
         userDefaults.set(latitude, forKey: searchCoordinatesLatitudeKey)
         userDefaults.set(longitude, forKey: searchCoordinatesLongitudeKey)
-        print("saved search coordinates!")
     }
     //getting users last used location
     public func getUserCoordinate() -> (latitude: Double?, longitude: Double?) {

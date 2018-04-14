@@ -7,6 +7,7 @@
 
 import Foundation
 
+//formula: prefix+width+"x"+height+suffix
 struct AllPhotos: Codable {
     let response: Response
 }

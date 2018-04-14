@@ -6,75 +6,52 @@
 //
 
 import Foundation
+import Alamofire
 
 class FourSquareAPIService{
     
     private init(){}
     static let service = FourSquareAPIService()
     
-    
-    //MARK: getting all results from query
-    func getVenueResults(lat latitute: Double,
-                         lon longitude: Double,
-                         query: String,
-                         completion: @escaping ([Venue]) -> Void, errorHandler: @escaping (Error) -> Void){
-        //building version parameter for API endpoint
+    public func getVenues(lat latitute: Double,
+                   lon longitude: Double,
+                   search searchTerm: String,
+                   completion: @escaping ([Venue]) -> Void, errorHandler: @escaping (Error) -> Void) {
+        
+        //building api endpoint
+        let urlBase = "https://api.foursquare.com/v2/venues/search"
         let dateFormatted = DateFormatter()
         let date = Date()
         dateFormatted.dateFormat = "yyyyMMdd"
-        let dateAsStr = dateFormatted.string(from: date)
+        let strDate = dateFormatted.string(from: date)
+        let params: [String: Any] = ["ll": "\(latitute),\(longitude)",
+            "query": searchTerm,
+            "limit": 20,
+            "client_id": FourSquareAPIKeys.clientID,
+            "client_secret": FourSquareAPIKeys.clientKey,
+            "v": strDate]
         
-        let urlStr = "https://api.foursquare.com/v2/venues/search?ll=\(latitute,longitude)&query=\(query)&client_id=\(FourSquareAPIKeys.clientID)&client_secret=\(FourSquareAPIKeys.clientKey)&v=\(dateAsStr)"
-        //guard valid url
-        guard let url = URL(string: urlStr) else {
-            errorHandler(AppError.badURL(url: urlStr))
-            return
-        }
-        //url request
-        let request = URLRequest(url: url)
-        //networkhelper call
-        NetworkHelper.manager.performDataTask(with: request, completionHandler: { (data) in
-            do{
-                let decoder = JSONDecoder()
-                let results = try decoder.decode(AllVenues.self, from: data)
-                let searchedVenue = results.responseVenue.venues
-                completion(searchedVenue)
-            } catch {
-                errorHandler(AppError.couldNotParseJSON(rawError: error))
+        
+        Alamofire.request(urlBase, method: .get, parameters: params, encoding: URLEncoding.default, headers: nil).responseData { (dataResponse) in
+            
+            switch dataResponse.result {
+            case .failure(let error):
+                errorHandler(AppError.other(rawError: error))
+            case .success:
+                if let dataError = dataResponse.error {
+                    errorHandler(AppError.other(rawError: dataError.localizedDescription as! Error))
+                } else if let data = dataResponse.data {
+                    do {
+                        let decoder = JSONDecoder()
+                        let results = try decoder.decode(AllVenues.self, from: data)
+                        completion(results.responseVenue.venues)
+                    } catch let error {
+                        errorHandler(AppError.couldNotParseJSON(rawError: error))
+                    }
+                }
             }
-        }, errorHandler: errorHandler)
-    }
-    
-    //MARK: function to get details for queried venue --> Used in DetailedVenueVC
-    func getVenueDetails(venue venueID: String,
-                         completion: @escaping ([VenueDetails]) -> Void,
-                         errorHandler: @escaping (Error) -> Void){
-        //building version parameter for API endpoint
-        let dateFormatted = DateFormatter()
-        let date = Date()
-        dateFormatted.dateFormat = "yyyyMMdd"
-        let dateAsStr = dateFormatted.string(from: date)
-        
-        let urlStr = "https://api.foursquare.com/v2/venues/\(venueID)?client_id=\(FourSquareAPIKeys.clientID)&client_secret=\(FourSquareAPIKeys.clientKey)&v=\(dateAsStr)"
-        
-        //guard valid url
-        guard let url = URL(string: urlStr) else {
-            errorHandler(AppError.badURL(url: urlStr))
-            return
         }
-        //url request
-        let request = URLRequest(url: url)
-        //networkhelper call
-        NetworkHelper.manager.performDataTask(with: request, completionHandler: { (data) in
-            do{
-                let decoder = JSONDecoder()
-                let results = try decoder.decode(AllVenueDetails.self, from: data)
-                let detailedVenue = results.response.venue
-                completion([detailedVenue])
-            } catch {
-                errorHandler(AppError.couldNotParseJSON(rawError: error))
-            }
-        }, errorHandler: errorHandler)
     }
-    
 }
+
+

@@ -82,7 +82,7 @@ extension LocationService {
         }
     }
     
-    //MARK: created funciton to avoid having to import core location in the view controller
+    //MARK: created functioon to avoid having to import core location in the view controller
     public func locationServicesEnabled() -> Bool {
         return CLLocationManager.locationServicesEnabled()
     }
@@ -90,8 +90,6 @@ extension LocationService {
     public func getCurrentLocation(fromUserCoordinate userCoordinate: CLLocationCoordinate2D, completionHandler: @escaping (String) -> Void) {
         
         geocoder.reverseGeocodeLocation(CLLocation.init(latitude: userCoordinate.latitude, longitude: userCoordinate.longitude)) { (placeMark, error) in
-            print("\(placeMark?.first?.locality), \(placeMark?.first?.administrativeArea)")
-            
             var location: String!
             
             if let placeMark = placeMark?.first {
@@ -116,7 +114,7 @@ extension LocationService {
 }
 
 //MARK: - Location Manager Delegate Methods
-//i'm not making the view controller conform to this delegate because there's some functions here that should be handled in the model, not the view controller; i'll make a separate custom delegate that can pass information from these delegate methods
+//Conform to this delegate because there's some functions here that should be handled in the model, not the view controller; I'll make a separate custom delegate that can pass information from these delegate methods
 
 extension LocationService: CLLocationManagerDelegate {
     
@@ -125,8 +123,7 @@ extension LocationService: CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        //what happens when the location service authorization status changes
-        //maybe should have different pop ups based on what authorization status is
+        
         delegate?.locationServiceAuthorizationStatusChanged(toStatus: status)
     }
     
@@ -138,7 +135,5 @@ extension LocationService: CLLocationManagerDelegate {
             
             UserPreferences.manager.saveUserCoordinates(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
         }
-        
     }
-    
 }
