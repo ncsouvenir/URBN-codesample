@@ -17,6 +17,7 @@ extension SearchVC: UISearchBarDelegate {
             let formattedVenueSearchText = venueSearchText.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
             else {
                 let noVenuesAlert = Alerts.createAlert(withTitle: "No Search Term", andMessage: "Please enter a valid search term before searching.")
+                Alerts.addAction(withTitle: "OK", style: .default, toAlertController: noVenuesAlert, andCompletion: nil)
                 self.present(noVenuesAlert, animated: true, completion: nil)
                 return
         }

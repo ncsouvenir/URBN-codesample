@@ -14,6 +14,7 @@ extension SearchVC: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, didFailToLocateUserWithError error: Error) {
         let errorAlert = Alerts.createErrorAlert(withMessage: "Location not Enabled. Click on Locaiton button to enable location", andCompletion: nil)
         Alerts.addAction(withTitle: "OK", style: .default, toAlertController: errorAlert, andCompletion: nil)
+        self.present(errorAlert, animated: true, completion: nil)
     }
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {

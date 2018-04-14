@@ -140,12 +140,13 @@ extension SearchVC {
         FourSquareAPIService.service.getVenues(lat: latitude, lon: longitude, search: searchTerm, completion: { (venues) in
             if venues.isEmpty {
                 let alert = Alerts.createAlert(withTitle: "No Results", andMessage: "Please try again with a different search term or location.")
+                Alerts.addAction(withTitle: "OK", style: .default, toAlertController: alert, andCompletion: nil)
                 self.present(alert, animated: true, completion: nil)
                 return
             }
             self.venues = venues
         }, errorHandler: { (error) in
-            let errorAlert = Alerts.createErrorAlert(withMessage: "An error occurred:\nRate Limit has been exceeded.\n\(error)", andCompletion: nil)
+            let errorAlert = Alerts.createErrorAlert(withMessage: "An error occurred: \(error)", andCompletion: nil)
             self.present(errorAlert, animated: true, completion: nil)
         })
     }
