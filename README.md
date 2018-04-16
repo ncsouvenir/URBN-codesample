@@ -46,7 +46,7 @@ Then, run the following command in Terminal:
 
 
 ## App Flow
-**Login View**| **Profile View** |
+**Location On**| **Location Off** |
 :---: | :---: |
 ![gif](https://github.com/ncsouvenir/URBN-codesample/blob/master/Gifs/searchwithlocation.gif) <br/>Search for venue and see reults in mapview| ![gif](https://github.com/ncsouvenir/URBN-codesample/blob/master/Gifs/nolocationsearch.gif) <br/> Searching with NO location | 
 **Cropping**| **Filtering** |
