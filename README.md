@@ -39,7 +39,7 @@ Then, run the following command in Terminal:
 `$ pod install`
 
 ## Four Square Code Challenge Requirments
-- Your app should be at least largely written in Swift if not 100% Swift.
+1. Your app should be at least largely written in Swift if not 100% Swift.
     -jjj
 - Networking code. Your app should NOT use one of the available Foursquare sdk's so either raw NSURLSessions/Requests or something like AFNetworking/AlamoFire
 - Geolocation of user should also handle when geolocation is off or not enabled yet
