@@ -38,6 +38,24 @@ Then, run the following command in Terminal:
 
 `$ pod install`
 
+## Four Square Code Challenge Requirments
+- Your app should be at least largely written in Swift if not 100% Swift.
+    -jjj
+- Networking code. Your app should NOT use one of the available Foursquare sdk's so either raw NSURLSessions/Requests or something like AFNetworking/AlamoFire
+- Geolocation of user should also handle when geolocation is off or not enabled yet
+- A way to select geolocation as an option (a button maybe)
+- Search by query should allow users to search based on a query rather than their current location
+- A list of results from foursquare with all the information you believe a user needs to see
+An icon & distance would be nice
+- A detail view for a venue with extended details that you think are important (like venue photo, etc)
+ 
+
+For extra credit you could:
+
+Add in some nice transitions to and from list views to details
+Add your own personal UI flare
+Make the list view infinitely scrollable (pagination)
+
 
 ## Technologies Used
 - MapKit
