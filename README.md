@@ -1,4 +1,4 @@
-![Introduction](https://github.com/melissahe/TestInk/blob/qa/Gifs/Screen%20Shot%202018-04-06%20at%201.27.36%20PM.png)
+![Banner](https://github.com/ncsouvenir/URBN-codesample/blob/master/Gifs/Screen%20Shot%202018-04-16%20at%205.11.34%20PM.png)
 
 
 ## <p align="center"> Find A Venue allows users to search for desired venues and get directions as well as additional information
