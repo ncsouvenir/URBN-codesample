@@ -40,7 +40,7 @@ Then, run the following command in Terminal:
 
 ## Four Square Code Challenge Requirments
 1. Your app should be at least largely written in Swift if not 100% Swift.
-    -jjj
+- testing indentation
 2. Networking code. Your app should NOT use one of the available Foursquare sdk's so either raw NSURLSessions/Requests or something like AFNetworking/AlamoFire
 3. Geolocation of user should also handle when geolocation is off or not enabled yet
 4. A way to select geolocation as an option (a button maybe)
