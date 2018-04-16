@@ -48,7 +48,7 @@ Then, run the following command in Terminal:
 ## App Flow
 **Login View**| **Profile View** |
 :---: | :---: |
-![gif](https://github.com/melissahe/TestInk/blob/qa/Gifs/Login.gif) <br/>Search for venue and see reults in mapview| ![gif](https://github.com/melissahe/TestInk/blob/qa/Gifs/Like%20and%20Fev.gif) <br/>Choose a venue to see additonal information | 
+![gif](https://github.com/ncsouvenir/URBN-codesample/blob/master/Gifs/searchwithlocation.gif) <br/>Search for venue and see reults in mapview| ![gif](https://github.com/ncsouvenir/URBN-codesample/blob/master/Gifs/nolocationsearch.gif) <br/> Searching with NO location | 
 **Cropping**| **Filtering** |
-![gif](https://github.com/melissahe/TestInk/blob/qa/Gifs/CropDemo.gif) <br/>Users can see the same venue results in a listview | ![gif](https://github.com/melissahe/TestInk/blob/qa/Gifs/FilterDemo.gif) <br/>Add filters to photos upload from photo library| |
+![gif](https://github.com/ncsouvenir/URBN-codesample/blob/master/Gifs/choosevenueseeinfo.gif) <br/>Choose a venue to see additional information | ![gif](https://github.com/ncsouvenir/URBN-codesample/blob/master/Gifs/showinglistview.gif) <br/>See venue results in a list view as well|![gif](https://github.com/ncsouvenir/URBN-codesample/blob/master/Gifs/showingdirections.gif) <br/> User able to get directions from current location to venue location |
 
